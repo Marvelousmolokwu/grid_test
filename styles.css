@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(231, 245, 245);
+  padding: 50px 20px;
+  overflow-x: hidden;
+  font-size: 13px;
+  line-height: 30px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+@media screen and (min-width: 375px) {
+  main {
+    line-height: 23px;
+    font-size: 13px;
+  }
+  .first-card {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    position: relative;
+    padding: 20px 30px;
+
+    border-radius: 10px;
+  }
+  .first-card p {
+    opacity: 70%;
+    font-weight: 500;
+  }
+  .first-card h2 {
+    opacity: 90%;
+    font-weight: 600;
+  }
+  .first-card:hover {
+    box-shadow: 1px 0px 20px 5px #a2b1e6;
+  }
+  .quotation {
+    position: absolute;
+
+    right: 30px;
+    top: 0;
+  }
+  .profile {
+    display: flex;
+
+    align-items: center;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+  .profile h5 {
+    font-weight: 600;
+  }
+  .profile p {
+    opacity: 70%;
+    font-weight: 500;
+  }
+  .img img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px white solid;
+    margin-right: 10px;
+    margin-top: 7px;
+  }
+  .second-card {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  .second-card:hover {
+    box-shadow: 1px 0px 20px 5px #a2b1e6;
+  }
+  .third-card {
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  .third-card:hover {
+    box-shadow: 1px 0px 20px 5px #a2b1e6;
+  }
+  .fourth-card {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  .fourth-card:hover {
+    box-shadow: 1px 0px 20px 5px #a2b1e6;
+  }
+  .fifth-card {
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  .fifth-card:hover {
+    box-shadow: 1px 0px 20px 5px #a2b1e6;
+  }
+}
+@media screen and (min-width: 1240px) {
+  body {
+    overflow: visible;
+  }
+  main {
+    display: flex;
+    gap: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+  }
+  .first-card {
+    grid-column: 1/6;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .second-card {
+    grid-column: 6/9;
+    height: 300px;
+  }
+
+  .third-card {
+    grid-column: 1/4;
+    grid-row: 2;
+    margin-top: 0px;
+  }
+  .fourth-card {
+    grid-column: 4/9;
+    grid-row: 2;
+    margin-top: 0px;
+  }
+  .fifth-card {
+    width: 300px;
+  }
+}
